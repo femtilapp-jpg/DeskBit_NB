@@ -31,7 +31,7 @@ namespace DeskBit {
          * Set the servo angle
          */
         //% weight=100 help=servos/set-angle
-        //% blockId=servoservosetangle block="set %servo angle to %degrees=protractorPicker °"
+        //% blockId=servoservosetangle block="sett %servo vinkel til %degrees=protractorPicker °"
         //% degrees.defl=90
         //% servo.fieldEditor="gridpicker"
         //% servo.fieldOptions.width=220
@@ -113,7 +113,7 @@ namespace DeskBit {
      * Set the car speed
      * angle can control speed
      */
-    //% block="Car %directe speed: %Speed"
+    //% block="Bilens %directe hastighet: %Speed"
     //% Speed.min=0 Speed.max=100
     //% group="Car"
     export function Run(directe: DIR, Speed: number) {
@@ -140,7 +140,7 @@ namespace DeskBit {
      * Set the car speed
      * angle can control speed
      */
-    //% block="Car %select wheel %directe speed: %Speed"
+    //% block="Bilens %select hjul %directe hastighet: %Speed"
     //% Speed.min=0 Speed.max=100
     //% group="Car"
     export function Run2(select: L_R, directe: F_B, Speed: number) {
@@ -162,7 +162,7 @@ namespace DeskBit {
     /**
      * Car stop
      */
-    //% block="Car Stop"
+    //% block="Stopp bil"
     //% group="Car"
     export function Stop() {
         leftWheel.InternalSetAngle(90);
@@ -172,7 +172,7 @@ namespace DeskBit {
     /**
      * car's shovel
      */
-    //% block="Angle of Car's arm: %angle °"
+    //% block="Vinkelen på bilens arm: %angle °"
     //% angle.min=0 angle.max=180
     //% group="Car"
     export function Shovel(angle: number) {

@@ -6,7 +6,7 @@
  */
 
 //% color="#ff6800" icon="\uf1b9" 
-//% groups='["Car", "Servo", "Configuration"]'
+//% groups='["Bil", "Servo", "Konfigurering"]'
 namespace DeskBit {
 
     //% fixedInstances
@@ -115,7 +115,7 @@ namespace DeskBit {
      */
     //% block="Bilens %directe hastighet: %Speed"
     //% Speed.min=0 Speed.max=100
-    //% group="Car"
+    //% group="Bil"
     export function Run(directe: DIR, Speed: number) {
         let CW = Math.map(Speed, 0, 100, 90, 180);
         let CCW = Math.map(Speed, 0, 100, 90, 0);
@@ -142,7 +142,7 @@ namespace DeskBit {
      */
     //% block="Bilens %select hjul %directe hastighet: %Speed"
     //% Speed.min=0 Speed.max=100
-    //% group="Car"
+    //% group="Bil"
     export function Run2(select: L_R, directe: F_B, Speed: number) {
         let CW = Math.map(Speed, 0, 100, 90, 180);
         let CCW = Math.map(Speed, 0, 100, 90, 0);
@@ -163,7 +163,7 @@ namespace DeskBit {
      * Car stop
      */
     //% block="Stopp bil"
-    //% group="Car"
+    //% group="Bil"
     export function Stop() {
         leftWheel.InternalSetAngle(90);
         rightWheel.InternalSetAngle(90);
@@ -174,7 +174,7 @@ namespace DeskBit {
      */
     //% block="Vinkelen på bilens arm: %angle °"
     //% angle.min=0 angle.max=180
-    //% group="Car"
+    //% group="Bil"
     export function Shovel(angle: number) {
         shovel.InternalSetAngle(angle);
     }

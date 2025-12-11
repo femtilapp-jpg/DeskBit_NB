@@ -1,10 +1,10 @@
 {
-    "name": "Desk_Bit",
+    "name": "Desk_Bit_NB",
     "version": "0.0.8",
     "description": "",
     "dependencies": {
         "core": "*",
-        "neopixel": "github:mworkfun/pxt-neopixel-bluetooth",
+        "neopixel": "github:microsoft/pxt-neopixel"
         "microphone": "*"
     },
     "files": [
